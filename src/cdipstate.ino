@@ -1,3 +1,26 @@
+/*
+MIT License
+
+Copyright (c) 2025 Peter Buelow
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
 #include <LocoNetStreamRP2040.h>
 #include "pico/stdlib.h"
 
@@ -15,7 +38,7 @@
 
 #define CDIP_1_ADDR         510
 #define CDIP_2_ADDR         511
-#define CDIP_3_ADDR         512
+#define CDIP_3_ADDR         500
 #define CDIP_4_ADDR         513
 
 #define STATE_CHANGE_TIMEOUT    250
@@ -23,43 +46,14 @@
 LocoNetBus bus;
 LocoNetDispatcher parser(&bus);
 
-struct repeating_timer cdip1_timer;
-struct repeating_timer cdip2_timer;
-struct repeating_timer cdip3_timer;
-struct repeating_timer cdip4_timer;
-
-CDIP cdip1(true, false, CDIP_1_ADDR, &bus);
-CDIP cdip2(true, false, CDIP_2_ADDR, &bus);
-CDIP cdip3(true, false, CDIP_3_ADDR, &bus);
-CDIP cdip4(true, false, CDIP_4_ADDR, &bus);
+CDIP cdip1(false, CDIP_1_ADDR, &bus);
+CDIP cdip2(true, CDIP_2_ADDR, &bus);
+CDIP cdip3(true, CDIP_3_ADDR, &bus);
+CDIP cdip4(true, CDIP_4_ADDR, &bus);
 
 // The line below initialised the LocoNet interface for the correct signal polarity of the IoTT LocoNet Interface board
 // See: https://myiott.org/index.php/iott-stick/communication-modules/loconet-interface
 LocoNetStreamRP2040 lnStream(&Serial1, LOCONET_PIN_RX, LOCONET_PIN_TX, &bus, true, true);
-
-bool cdip1_inactive(struct repeating_timer *t) 
-{
-    cdip1.active(false);
-    return true;
-}
-
-bool cdip2_inactive(struct repeating_timer *t) 
-{
-    cdip2.active(false);
-    return true;
-}
-
-bool cdip3_inactive(struct repeating_timer *t) 
-{
-    cdip3.active(false);
-    return true;
-}
-
-bool cdip4_inactive(struct repeating_timer *t) 
-{
-    cdip4.active(false);
-    return true;
-}
 
 void LocoNetActiveInterrupt(void)
 {
@@ -69,29 +63,25 @@ void LocoNetActiveInterrupt(void)
 void cdip1_state(void)
 {
     cdip1.active(true);
-    cancel_repeating_timer(&cdip1_timer);
-    add_repeating_timer_ms(250, cdip1_inactive, NULL, &cdip1_timer);
+    cdip1.restartTimer();
 }
 
 void cdip2_state(void)
 {
     cdip2.active(true);
-    cancel_repeating_timer(&cdip2_timer);
-    add_repeating_timer_ms(250, cdip2_inactive, NULL, &cdip2_timer);
+    cdip2.restartTimer();
 }
 
 void cdip3_state(void)
 {
     cdip3.active(true);
-    cancel_repeating_timer(&cdip3_timer);
-    add_repeating_timer_ms(250, cdip3_inactive, NULL, &cdip3_timer);
+    cdip3.restartTimer();
 }
 
 void cdip4_state(void)
 {
     cdip4.active(true);
-    cancel_repeating_timer(&cdip4_timer);
-    add_repeating_timer_ms(250, cdip4_inactive, NULL, &cdip4_timer);
+    cdip4.restartTimer();
 }
 
 void setup()
@@ -120,11 +110,6 @@ void setup()
     pinMode(CDIP_3_GPIO, INPUT);
     pinMode(CDIP_4_GPIO, INPUT);
 
-    add_repeating_timer_ms(STATE_CHANGE_TIMEOUT, cdip1_inactive, NULL, &cdip1_timer);
-    add_repeating_timer_ms(STATE_CHANGE_TIMEOUT, cdip2_inactive, NULL, &cdip2_timer);
-    add_repeating_timer_ms(STATE_CHANGE_TIMEOUT, cdip3_inactive, NULL, &cdip3_timer);
-    add_repeating_timer_ms(STATE_CHANGE_TIMEOUT, cdip4_inactive, NULL, &cdip4_timer);
-
     attachInterrupt(LOCONET_PIN_RX, LocoNetActiveInterrupt, FALLING);
 
     attachInterrupt(CDIP_1_GPIO, cdip1_state, FALLING);
@@ -135,6 +120,8 @@ void setup()
     digitalWrite(PIN_LED_R, HIGH);
     digitalWrite(PIN_LED_G, HIGH);
     digitalWrite(PIN_LED_B, HIGH);
+
+    cdip3.start();
     Serial.println("Finished Setup");
 }
 
