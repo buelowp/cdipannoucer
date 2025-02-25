@@ -46,7 +46,7 @@ SOFTWARE.
 LocoNetBus bus;
 LocoNetDispatcher parser(&bus);
 
-CDIP cdip1(false, CDIP_1_ADDR, &bus);
+CDIP cdip1(true, CDIP_1_ADDR, &bus);
 CDIP cdip2(true, CDIP_2_ADDR, &bus);
 CDIP cdip3(true, CDIP_3_ADDR, &bus);
 CDIP cdip4(true, CDIP_4_ADDR, &bus);
@@ -57,7 +57,7 @@ LocoNetStreamRP2040 lnStream(&Serial1, LOCONET_PIN_RX, LOCONET_PIN_TX, &bus, tru
 
 void LocoNetActiveInterrupt(void)
 {
-  lnStream.handleLocoNetActivityInterrupt();
+    lnStream.handleLocoNetActivityInterrupt();
 }
 
 void cdip1_state(void)
