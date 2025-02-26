@@ -31,6 +31,8 @@ I built a first board based solely on a few simple schematic facts hoping they a
 
 Recently, I also added the ability to use DCC for power. However, I couldn't find a way to combine the two DCC connectors at that point, so you always need a DCC input for the IO, but if you want to power via DCC, then you simply plug a DCC bus into the power connection. For this reason, that connection is no longer polarized, and it doesn't matter which way you wire it.
 
+I also added 3 pins connected to D8, D9, and D10 in Arduino land. They have both Ground and Power pins to go with, so you can use them however you feel the urge. I would limit any GPIO access to 30ma total though, as you have 500ma from the board, but roughly 200ma is already consumed.
+
 ![image](media/board.png)
 ![image](media/schematic.png)
 
