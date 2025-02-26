@@ -17,10 +17,10 @@ While not yet coded up, my mechanism for knowing when to send a startup message 
 * Provide a loconet message indicating turnout state on DCC power up
 * Handle four turnouts on one board
 * Run with either an ESP32 or RPi Pico
-* Not require more than 8 GPIO (this one currently only uses 4)
+* Not require more than 8 GPIO (this one currently only uses 7, three are just there not doing much)
 * Wide input voltage range
 * Allow for direct connection of indicator LEDs for the turnout.
-** This allows to wire up signals as an example, without the need for extra diodes/resistors along the wire run.
+ * This allows to wire up signals as an example, without the need for extra diodes/resistors along the wire run.
 
 ### What it doesn't currently do
 * Will not switch the turnout via a Loconet message
