@@ -10,7 +10,7 @@ This will not do loconet forwarding, and you can't daisy chain. I started to thi
 
 This design makes use of Seeed Studio XIAO modules. I love these things. They are pretty cheap overall, tiny, and you can swap different modules on the same carrier. So, my design uses the Pico MCU because I don't want to include WiFi in my design. My basement layout is pretty far from the nearest router, and I don't want to suck up a lot of the router's attention for these when turned on. However, without changing the hardware, or changing the board size, anyone could use the ESP32 if they choose to. The benefit there might be MQTT and adding a webserver to assign DCC addresses without recompiling the firmware.
 
-While not yet coded up, my mechanism for knowing when to send a startup message will be based on the first Loconet traffic the board sees. I'm choosing this as I don't want to power this from DCC (that may change) so it will be up before track power is on, at least on my layout. Sending a state message on first power up to no one is kinda dumb, so the firmware will watch for loconet traffic, and send the updates after that starts.
+While not yet coded up, my mechanism for knowing when to send a startup message will be based on the first Loconet traffic the board sees. As this can be DCC powered, it can also be DC powered, so triggering on when we start to see traffic would be the most beneficial in all cases.
 
 ## Requirements
 * Provide Loconet messages for turnout state changes as they happen
@@ -19,6 +19,8 @@ While not yet coded up, my mechanism for knowing when to send a startup message 
 * Run with either an ESP32 or RPi Pico
 * Not require more than 8 GPIO (this one currently only uses 4)
 * Wide input voltage range
+* Allow for direct connection of indicator LEDs for the turnout.
+** This allows to wire up signals as an example, without the need for extra diodes/resistors along the wire run.
 
 ### What it doesn't currently do
 * Will not switch the turnout via a Loconet message
