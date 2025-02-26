@@ -29,7 +29,10 @@ This is a work in progress. What I've got posted now is version 2, not yet order
 
 I built a first board based solely on a few simple schematic facts hoping they all sort of would just work. This did allow me to test the GPIO portion of the design and validate my assumptions were correct. However, version 1, which is not in git unforunately, did not work for Loconet traffic. I don't know why, but I did make a mistake in the pin assigments for the second Serial port on the XIAO Pico module. I did jumper it, but it still doesn't work. I also didn't add test points, so it's not possible for me at home to use a scope to figure out what's going on. All of those facts are fixed in the current version.
 
+Recently, I also added the ability to use DCC for power. However, I couldn't find a way to combine the two DCC connectors at that point, so you always need a DCC input for the IO, but if you want to power via DCC, then you simply plug a DCC bus into the power connection. For this reason, that connection is no longer polarized, and it doesn't matter which way you wire it.
+
 ![image](media/board.png)
+![image](media/schematic.png)
 
 ## Notes
 * The orientation of the DCC inputs into the Digital IP does matter. I assume for this device that DCC Rail A as labeled coming out of a Digitrax command station is the outer most pin 1 in the diagram below. If you reverse and put DCC Rail B into that slot, you either have to reverse Rail A and B inputs for the DCC Input terminal or update the code to account for the direction messages being backwards. Note, if you reverse using DCC address 197, you must also reverse the direction. This can be done by setting the CDIP inverted boolean to true.
