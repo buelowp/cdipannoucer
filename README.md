@@ -38,7 +38,16 @@ I also added 3 pins connected to D8, D9, and D10 in Arduino land. They have both
 ![image](media/board.png)
 ![image](media/schematic.png)
 
-## Notes
+## KiCad notes
+This design makes use of JLCPCB to source and order. The parts are identified in the BOM, and the parts that can't be assembled by JLCPCB are marked as such (the red X). I used a plugin to get the parts from
+
+https://github.com/CDFER/JLCPCB-Kicad-Library
+
+Which cannot at this time be installed automatically. Follow the directions on the README.
+
+I also use the JLCPCB Fab extension which can be installed directly from the Extensions dialog.
+
+# Notes
 * The orientation of the DCC inputs into the Digital IP does matter. I assume for this device that DCC Rail A as labeled coming out of a Digitrax command station is the outer most pin 1 in the diagram below. If you reverse and put DCC Rail B into that slot, you either have to reverse Rail A and B inputs for the DCC Input terminal or update the code to account for the direction messages being backwards. Note, if you reverse using DCC address 197, you must also reverse the direction. This can be done by setting the CDIP inverted boolean to true.
 ![image](media/cdip_connectors.png)
 * This is DC only, but takes up to 30V as input. The reason for this is that I have a 15V DC power bus running with the DCC bus to power some of the Digitrax devices in use (mostly PM74's). For the length of those conductors, even at 16Ga, you get some voltage drop and this should allow the boards to not worry about that.
