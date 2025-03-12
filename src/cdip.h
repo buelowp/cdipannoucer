@@ -34,6 +34,7 @@ class CDIP {
 
             m_previous = m_active;
         }
+
         ~CDIP() 
         {
             cancel_repeating_timer(&m_timer);
@@ -42,6 +43,7 @@ class CDIP {
         void active(bool state) 
         { 
             if (state != m_previous) {
+                Serial.printf("%d active\n", m_addr);
                 setActive(state);
                 m_previous = state;
                 stateChange();
@@ -55,6 +57,7 @@ class CDIP {
 
         static bool handler(struct repeating_timer *t)
         {
+            Serial.printf("static handler\n");
             static_cast<CDIP*>(t->user_data)->active(false);
             return false;
         }
@@ -68,13 +71,13 @@ class CDIP {
         void start()
         {
             add_repeating_timer_ms(m_timeout, handler, this, &m_timer);
-            Serial.printf("Timer id: %d\n", m_timer.alarm_id);
+            Serial.printf("Started Cobalt IP Digital Monitor for address %d\n", m_addr);
             stateChange();
         }
 
     private:
         void stateChange() {
-            //requestSwitch(m_bus, m_addr, true, m_active);
+            reportSwitch(m_bus, m_addr);
             if (m_active)
                 Serial.printf("Turnout %d: THROWN\n", m_addr);
             else

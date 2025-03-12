@@ -9546,12 +9546,6 @@
 		(uuid "441aa764-ea1f-436b-8cf0-55335c4b5bda")
 	)
 	(junction
-		(at 229.87 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4a3c9ddf-6350-4bcd-987f-cb1b126b719a")
-	)
-	(junction
 		(at 107.95 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9582,18 +9576,6 @@
 		(uuid "5cb05348-0920-40ef-b1cf-ea7258ca1785")
 	)
 	(junction
-		(at 101.6 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d3119ec-2218-4d6a-97f0-fb7caaf9adca")
-	)
-	(junction
-		(at 223.52 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69a67ea2-6428-44cd-8b58-66aa9a97eec0")
-	)
-	(junction
 		(at 60.96 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9604,6 +9586,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71db7615-0f9f-4f07-afef-23a2ef493e67")
+	)
+	(junction
+		(at 46.99 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75239867-63fa-415a-b4bf-0590eedac000")
 	)
 	(junction
 		(at 149.86 48.26)
@@ -9630,12 +9618,6 @@
 		(uuid "8a1e0522-78d0-43ca-9208-d2ca2f859bf8")
 	)
 	(junction
-		(at 95.25 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e1d65dc-2fd1-41b6-86e5-eaf73d2ea085")
-	)
-	(junction
 		(at 271.78 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9652,12 +9634,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "930d8c29-0ef4-4e76-a960-f590e5796912")
-	)
-	(junction
-		(at 41.91 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "93ed7ab8-a262-4a53-9af9-11040cc5c0da")
 	)
 	(junction
 		(at 69.85 49.53)
@@ -9682,6 +9658,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ef70ba1-d439-4217-aa6e-1a23c3a7248d")
+	)
+	(junction
+		(at 224.79 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a07eb6ca-bde2-46f0-a76c-11bdc5c0c2a6")
 	)
 	(junction
 		(at 95.25 46.99)
@@ -9760,6 +9742,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dce24c38-bc63-4c63-aa59-fd530327c7b1")
+	)
+	(junction
+		(at 46.99 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddc96dd6-7e6b-4732-b748-4354aa19d4d4")
 	)
 	(junction
 		(at 152.4 113.03)
@@ -9985,6 +9973,16 @@
 		)
 		(uuid "0e26a420-a514-4418-83d6-8065d93a6274")
 	)
+	(wire
+		(pts
+			(xy 46.99 36.83) (xy 46.99 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e6453e1-6adf-4a81-b48b-ed1d7d875b16")
+	)
 	(polyline
 		(pts
 			(xy 111.76 64.77) (xy 201.93 64.77)
@@ -10037,7 +10035,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 36.83) (xy 54.61 36.83)
+			(xy 41.91 36.83) (xy 46.99 36.83)
 		)
 		(stroke
 			(width 0)
@@ -10104,16 +10102,6 @@
 			(type default)
 		)
 		(uuid "1b50f76c-7dee-4bea-928a-363e05cee8d1")
-	)
-	(wire
-		(pts
-			(xy 101.6 44.45) (xy 101.6 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bb74c24-26f1-4d3c-8588-8bc9ec959844")
 	)
 	(wire
 		(pts
@@ -10284,16 +10272,6 @@
 			(type default)
 		)
 		(uuid "2d4443f4-6790-46f9-ac19-d6dfd9ff89f1")
-	)
-	(wire
-		(pts
-			(xy 29.21 81.28) (xy 38.1 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e2fd6c0-077d-4a01-a808-eb46b0bee619")
 	)
 	(wire
 		(pts
@@ -10527,7 +10505,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 102.87) (xy 233.68 102.87)
+			(xy 232.41 102.87) (xy 233.68 102.87)
 		)
 		(stroke
 			(width 0)
@@ -10747,7 +10725,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 46.99) (xy 101.6 46.99)
+			(xy 95.25 46.99) (xy 104.14 46.99)
 		)
 		(stroke
 			(width 0)
@@ -10797,7 +10775,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 102.87) (xy 222.25 102.87)
+			(xy 217.17 102.87) (xy 224.79 102.87)
 		)
 		(stroke
 			(width 0)
@@ -10887,16 +10865,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 26.67) (xy 101.6 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72c04b22-8a2e-4130-ba57-ac1e5ff04d43")
-	)
-	(wire
-		(pts
 			(xy 271.78 107.95) (xy 271.78 109.22)
 		)
 		(stroke
@@ -10977,6 +10945,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 60.96) (xy 46.99 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8265f54f-cb43-41ab-be54-5f4347fa3bd0")
+	)
+	(wire
+		(pts
 			(xy 219.71 26.67) (xy 223.52 26.67)
 		)
 		(stroke
@@ -11004,6 +10982,16 @@
 			(type default)
 		)
 		(uuid "8338c6c2-2bc1-4fee-ab49-71442a168ddd")
+	)
+	(wire
+		(pts
+			(xy 224.79 102.87) (xy 224.79 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "834f837c-86a9-4512-b67b-d2cfe8be8704")
 	)
 	(wire
 		(pts
@@ -11257,7 +11245,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 116.84) (xy 234.95 116.84)
+			(xy 224.79 116.84) (xy 234.95 116.84)
 		)
 		(stroke
 			(width 0)
@@ -11357,17 +11345,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 78.74) (xy 41.91 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab7d271b-4f90-4afb-b1f0-b60f39e45a68")
-	)
-	(wire
-		(pts
-			(xy 217.17 107.95) (xy 223.52 107.95)
+			(xy 217.17 107.95) (xy 233.68 107.95)
 		)
 		(stroke
 			(width 0)
@@ -11414,16 +11392,6 @@
 			(type default)
 		)
 		(uuid "af287e52-c4b8-4276-b972-c26d40de0dbf")
-	)
-	(wire
-		(pts
-			(xy 223.52 107.95) (xy 233.68 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3382cd2-8ec2-4b9e-a6f9-3a6f7f21d104")
 	)
 	(wire
 		(pts
@@ -11487,16 +11455,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 46.99) (xy 104.14 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b69ac540-e8de-4c61-b186-ebcca3a5b6fb")
-	)
-	(wire
-		(pts
 			(xy 71.12 163.83) (xy 72.39 163.83)
 		)
 		(stroke
@@ -11527,7 +11485,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 110.49) (xy 223.52 107.95)
+			(xy 217.17 110.49) (xy 217.17 107.95)
 		)
 		(stroke
 			(width 0)
@@ -11724,6 +11682,16 @@
 			(type default)
 		)
 		(uuid "dfd775cc-6a56-4b03-ae84-841058b0b0e1")
+	)
+	(wire
+		(pts
+			(xy 46.99 36.83) (xy 54.61 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e112c0c4-290f-4ebc-87e0-fbb581c32aea")
 	)
 	(wire
 		(pts
@@ -11997,6 +11965,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 81.28) (xy 54.61 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8efd3ca-7a58-4fe3-98f0-c65f9c196c9c")
+	)
+	(wire
+		(pts
 			(xy 264.16 26.67) (xy 269.24 26.67)
 		)
 		(stroke
@@ -12004,26 +11982,6 @@
 			(type default)
 		)
 		(uuid "f92eacd1-c339-47f3-a8d5-ecc424e0b146")
-	)
-	(wire
-		(pts
-			(xy 229.87 109.22) (xy 229.87 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9be62af-3385-40dd-b5fc-a52a5e791660")
-	)
-	(wire
-		(pts
-			(xy 29.21 78.74) (xy 41.91 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9dc90e7-a6d7-4305-8975-58425a6c0cae")
 	)
 	(wire
 		(pts
@@ -12037,7 +11995,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 81.28) (xy 54.61 81.28)
+			(xy 38.1 81.28) (xy 46.99 81.28)
 		)
 		(stroke
 			(width 0)
@@ -12077,7 +12035,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 34.29) (xy 101.6 36.83)
+			(xy 46.99 50.8) (xy 46.99 53.34)
 		)
 		(stroke
 			(width 0)
@@ -13021,16 +12979,15 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:Schottky,RB160M-30")
-		(at 226.06 102.87 90)
+		(at 228.6 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0100f3bf-713b-4031-bd6d-49cbd73aaecf")
 		(property "Reference" "D1"
-			(at 226.3775 96.52 90)
+			(at 226.822 99.314 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13038,7 +12995,7 @@
 			)
 		)
 		(property "Value" "RB160M-30"
-			(at 226.3775 99.06 90)
+			(at 226.568 100.838 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -13046,7 +13003,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:D_SOD-123"
-			(at 226.06 104.648 90)
+			(at 228.6 104.648 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13055,7 +13012,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309051412_hongjiacheng-RB160M-30_C7502715.pdf"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13064,7 +13021,7 @@
 			)
 		)
 		(property "Description" "30V Independent Type 480mV@1A 1A SOD-123 Schottky Diodes ROHS"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13073,7 +13030,7 @@
 			)
 		)
 		(property "LCSC" "C7502715"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13082,7 +13039,7 @@
 			)
 		)
 		(property "Stock" "16093"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13091,7 +13048,7 @@
 			)
 		)
 		(property "Price" "0.026USD"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13100,7 +13057,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13109,7 +13066,7 @@
 			)
 		)
 		(property "Minimum Qty" "15"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13118,7 +13075,7 @@
 			)
 		)
 		(property "Attrition Qty" "4"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13127,7 +13084,7 @@
 			)
 		)
 		(property "Class" "Preferred Component"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13136,7 +13093,7 @@
 			)
 		)
 		(property "Category" "Diodes,Schottky Diodes"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13145,7 +13102,7 @@
 			)
 		)
 		(property "Manufacturer" "hongjiacheng"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13154,7 +13111,7 @@
 			)
 		)
 		(property "Part" "RB160M-30"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13163,7 +13120,7 @@
 			)
 		)
 		(property "Rectified Current" "1A"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13172,7 +13129,7 @@
 			)
 		)
 		(property "Forward Voltage (Vf@If)" "480mV@1A"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13181,7 +13138,7 @@
 			)
 		)
 		(property "Reverse Voltage (Vr)" "30V"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13190,7 +13147,7 @@
 			)
 		)
 		(property "Diode Configuration" "Independent Type"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13199,7 +13156,7 @@
 			)
 		)
 		(property "Reverse Leakage Current (Ir)" "50uA"
-			(at 226.06 102.87 0)
+			(at 228.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15108,7 +15065,7 @@
 			)
 		)
 		(property "Value" "100uf"
-			(at 219.71 106.1338 0)
+			(at 217.424 107.188 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15160,7 +15117,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Yellow")
-		(at 101.6 30.48 0)
+		(at 46.99 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15169,7 +15126,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fa96cf5-b2ec-4c3b-b10d-3bc4d4e42557")
 		(property "Reference" "D16"
-			(at 104.14 29.1146 0)
+			(at 49.53 45.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15178,7 +15135,7 @@
 			)
 		)
 		(property "Value" "Yellow"
-			(at 104.14 31.6547 0)
+			(at 49.53 48.1647 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15187,7 +15144,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:D_0603"
-			(at 99.822 30.48 90)
+			(at 45.212 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15196,7 +15153,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20160507/1462613613586.pdf"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15205,7 +15162,7 @@
 			)
 		)
 		(property "Description" "20mA Colorless Transparent Lens -40°C~+85°C 585.5nm~591.5nm Yellow 120° 60mW 0603 LED Indication - Discrete ROHS"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15214,7 +15171,7 @@
 			)
 		)
 		(property "LCSC" "C72038"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15223,7 +15180,7 @@
 			)
 		)
 		(property "Stock" "533054"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15232,7 +15189,7 @@
 			)
 		)
 		(property "Price" "0.024USD"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15241,7 +15198,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15250,7 +15207,7 @@
 			)
 		)
 		(property "Minimum Qty" "5"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15259,7 +15216,7 @@
 			)
 		)
 		(property "Attrition Qty" "1"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15268,7 +15225,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15277,7 +15234,7 @@
 			)
 		)
 		(property "Category" "Optoelectronics,Light Emitting Diodes (LED)"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15286,7 +15243,7 @@
 			)
 		)
 		(property "Manufacturer" "Everlight Elec"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15295,7 +15252,7 @@
 			)
 		)
 		(property "Part" "19-213/Y2C-CQ2R2L/3T(CY)"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15304,7 +15261,7 @@
 			)
 		)
 		(property "Dominant Wavelength" "585.5nm~591.5nm"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15313,7 +15270,7 @@
 			)
 		)
 		(property "Operating Temperature" "-40°C~+85°C"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15322,7 +15279,7 @@
 			)
 		)
 		(property "Power Dissipation" "60mW"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15331,7 +15288,7 @@
 			)
 		)
 		(property "Emitted Color" "Yellow"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15340,7 +15297,7 @@
 			)
 		)
 		(property "Viewing Angle" "120°"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15349,7 +15306,7 @@
 			)
 		)
 		(property "Forward Current" "20mA"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15358,7 +15315,7 @@
 			)
 		)
 		(property "Lens Color" "Colorless Transparent Lens"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15367,7 +15324,7 @@
 			)
 		)
 		(property "Peak Wavelength" "591nm"
-			(at 101.6 30.48 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16398,7 +16355,7 @@
 	(symbol
 		(lib_name "LED,0603,Green_1")
 		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Green")
-		(at 229.87 113.03 0)
+		(at 224.79 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16406,7 +16363,7 @@
 		(dnp no)
 		(uuid "4dc596ef-19e7-4610-8d62-f10d29bb0a71")
 		(property "Reference" "D6"
-			(at 231.394 113.284 0)
+			(at 226.314 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16415,7 +16372,7 @@
 			)
 		)
 		(property "Value" "Green"
-			(at 228.092 114.808 90)
+			(at 223.012 114.808 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -16424,7 +16381,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:D_0603"
-			(at 228.092 113.03 90)
+			(at 223.012 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16433,7 +16390,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2207051802_Everlight-Elec-19-217-GHC-YR1S2-6T_C2986059.pdf"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16442,7 +16399,7 @@
 			)
 		)
 		(property "Description" "0603 LED Indication - Discrete ROHS"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16451,7 +16408,7 @@
 			)
 		)
 		(property "LCSC" "C2986059"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16460,7 +16417,7 @@
 			)
 		)
 		(property "Stock" "136525"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16469,7 +16426,7 @@
 			)
 		)
 		(property "Price" "0.021USD"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16478,7 +16435,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16487,7 +16444,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16496,7 +16453,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16505,7 +16462,7 @@
 			)
 		)
 		(property "Class" "Preferred Component"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16514,7 +16471,7 @@
 			)
 		)
 		(property "Category" "Optocoupler/LED/Digital Tube/Photoelectric Device,Light Emitting Diodes (LED)"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16523,7 +16480,7 @@
 			)
 		)
 		(property "Manufacturer" "Everlight Elec"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16532,7 +16489,7 @@
 			)
 		)
 		(property "Part" "19-217/GHC-YR1S2/6T"
-			(at 229.87 113.03 0)
+			(at 224.79 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18199,7 +18156,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 223.52 110.49 180)
+		(at 217.17 110.49 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18207,7 +18164,7 @@
 		(dnp no)
 		(uuid "7a298e44-22b3-4725-afdf-dc1b23165b87")
 		(property "Reference" "#FLG02"
-			(at 223.52 112.395 0)
+			(at 217.17 112.395 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18216,7 +18173,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 223.52 117.856 90)
+			(at 217.17 117.856 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18224,7 +18181,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 110.49 0)
+			(at 217.17 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18233,7 +18190,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 223.52 110.49 0)
+			(at 217.17 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18242,7 +18199,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 223.52 110.49 0)
+			(at 217.17 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18257,6 +18214,230 @@
 			(project ""
 				(path "/f5119306-f662-48e8-82bf-0093db5d9a1f"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "0402,2kΩ_1")
+		(lib_id "PCM_JLCPCB-Resistors:0402,2kΩ")
+		(at 46.99 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7df476f4-ac0c-49c3-a95b-52c97eec02e1")
+		(property "Reference" "R25"
+			(at 49.53 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2kΩ"
+			(at 46.99 57.15 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0402"
+			(at 48.768 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0402WGF2001TCE_C4109.pdf"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 2kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4109"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "1864367"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "0402WGF2001TCE"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "2kΩ"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 46.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "acb45041-a3d8-4aa2-8607-a69bc669a8de")
+		)
+		(pin "1"
+			(uuid "029db792-9239-42d8-9b7e-f0560ac8dc59")
+		)
+		(instances
+			(project "loconet"
+				(path "/f5119306-f662-48e8-82bf-0093db5d9a1f"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -18652,7 +18833,7 @@
 		(dnp no)
 		(uuid "87398bd3-92fe-46f0-8c83-3720023d859f")
 		(property "Reference" "R5"
-			(at 97.536 41.91 90)
+			(at 97.282 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24168,229 +24349,6 @@
 		)
 	)
 	(symbol
-		(lib_name "0402,1kΩ_1")
-		(lib_id "PCM_JLCPCB-Resistors:0402,1kΩ")
-		(at 101.6 40.64 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d998aea9-e22c-4b8b-8ca0-a1047fe6f12a")
-		(property "Reference" "R17"
-			(at 103.886 42.418 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1kΩ"
-			(at 101.6 40.64 90)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 103.378 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "5326005"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "0402WGF1001TCE"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Resistance" "1kΩ"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "537a7c21-5af6-4b6b-9743-c7805f81c284")
-		)
-		(pin "2"
-			(uuid "1566bf7e-f542-43bd-be59-246775b1efa9")
-		)
-		(instances
-			(project "loconet"
-				(path "/f5119306-f662-48e8-82bf-0093db5d9a1f"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 20.32 151.13 180)
 		(unit 1)
@@ -25656,73 +25614,6 @@
 			(project "loconet"
 				(path "/f5119306-f662-48e8-82bf-0093db5d9a1f"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 24.13 81.28 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "f1721bdc-4089-4882-9987-ce340572dae6")
-		(property "Reference" "J12"
-			(at 24.765 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LN Raw"
-			(at 26.162 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 24.13 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 24.13 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3d40873d-2ffc-4d98-80ad-f756604cf3fa")
-		)
-		(pin "1"
-			(uuid "e9793b74-9dcb-4c6c-855e-7e2b15027882")
-		)
-		(instances
-			(project ""
-				(path "/f5119306-f662-48e8-82bf-0093db5d9a1f"
-					(reference "J12")
 					(unit 1)
 				)
 			)

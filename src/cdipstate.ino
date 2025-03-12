@@ -43,6 +43,8 @@ SOFTWARE.
 
 #define STATE_CHANGE_TIMEOUT    250
 
+#define VERSION 6
+
 LocoNetBus bus;
 LocoNetDispatcher parser(&bus);
 
@@ -53,12 +55,7 @@ CDIP cdip4(true, CDIP_4_ADDR, &bus);
 
 // The line below initialised the LocoNet interface for the correct signal polarity of the IoTT LocoNet Interface board
 // See: https://myiott.org/index.php/iott-stick/communication-modules/loconet-interface
-LocoNetStreamRP2040 lnStream(&Serial1, LOCONET_PIN_RX, LOCONET_PIN_TX, &bus, true, true);
-
-void LocoNetActiveInterrupt(void)
-{
-    lnStream.handleLocoNetActivityInterrupt();
-}
+LocoNetStreamRP2040 lnStream(&Serial1, LOCONET_PIN_RX, LOCONET_PIN_TX, &bus, false, true);
 
 void cdip1_state(void)
 {
@@ -90,10 +87,7 @@ void setup()
     while((!Serial) && (millis() < 5000))
         delay(1);
 
-    Serial.println("LocoNet2 Basic Demo");
-    Serial.println("setup: before lnStream.start()");
     lnStream.start();
-    Serial.println("setup: after lnStream.start()");
 
     parser.onPacket(CALLBACK_FOR_ALL_OPCODES, [](const lnMsg *rxPacket) {
         char tmp[100];
@@ -110,8 +104,6 @@ void setup()
     pinMode(CDIP_3_GPIO, INPUT);
     pinMode(CDIP_4_GPIO, INPUT);
 
-    attachInterrupt(LOCONET_PIN_RX, LocoNetActiveInterrupt, FALLING);
-
     attachInterrupt(CDIP_1_GPIO, cdip1_state, FALLING);
     attachInterrupt(CDIP_2_GPIO, cdip2_state, FALLING);
     attachInterrupt(CDIP_3_GPIO, cdip3_state, FALLING);
@@ -121,8 +113,12 @@ void setup()
     digitalWrite(PIN_LED_G, HIGH);
     digitalWrite(PIN_LED_B, HIGH);
 
+//    cdip1.start();
+//    cdip2.start();
     cdip3.start();
-    Serial.println("Finished Setup");
+//    cdip4.start();
+
+    Serial.printf("Finished Setup: Version %d\n", VERSION);
 }
 
 void loop()
